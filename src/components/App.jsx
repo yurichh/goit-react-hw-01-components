@@ -1,11 +1,11 @@
-import Profile from 'components/Profile';
-import Statistics from 'components/Statistics';
+import Profile from 'components/Profile/Profile';
+import Statistics from 'components/Statistics/Statistics';
 import user from '../data/user.json';
 import data from '../data/data.json';
 import friendsData from '../data/friends.json';
 import transactions from '../data/transactions.json';
-import Friendlist from './Friendlist';
-import Transactions from './Transactions';
+import Friendlist from './Friendlist/Friendlist';
+import Transactions from './Transactions/Transactions';
 
 const App = () => {
   return (
@@ -22,7 +22,7 @@ const App = () => {
       <Statistics items={data} />
       <hr style={{ marginTop: '20px' }}></hr>
       <hr style={{ marginTop: '20px' }}></hr>
-      <Friendlist friends={friendsData} />
+      <Friendlist friendlist={friendsData} />
       <hr style={{ marginTop: '20px' }}></hr>
       <hr style={{ marginTop: '20px' }}></hr>
       <Transactions items={transactions} />
